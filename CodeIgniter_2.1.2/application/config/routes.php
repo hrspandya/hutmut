@@ -39,12 +39,18 @@
 */
 
 //$route['default_controller'] = "welcome";
-$route['default_controller'] = 'pages/view';
-$route['(:any)'] = 'pages/view/$1';
 $route['404_override'] = '';
 
 $route['news/(:any)'] = 'news/view/$1';
 $route['news'] = 'news';
+
+
+//JoinUs form
+//URL                      //Controller call
+$route['joinUs/(:any)'] = 'joinUs/index/$1';
+$route['joinUs'] = 'joinUs';
+
+
 $route['(:any)'] = 'pages/view/$1';
 $route['default_controller'] = 'pages/view';
 

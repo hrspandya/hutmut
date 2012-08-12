@@ -8,14 +8,14 @@ class Pages extends CI_Controller {
 			// Whoops, we don't have a page for that!
 		//	show_404();
 		//}
-		
+		$this->load->library('session');
             
                 if ( ! file_exists($_SERVER['APPLICATION_ROOT'].'/views/pages/'.$page.'.php')){
 			// Whoops, we don't have a page for that!
-	//		show_404();
+		//	show_404();
 		}
                 
-		var_dump(($_SERVER['APPLICATION_ROOT'].'/views/pages/'.$page.'.php')); 
+		//var_dump(($_SERVER['APPLICATION_ROOT'].'/views/pages/'.$page.'.php')); 
 		
 		$data['title'] = ucfirst($page); // Capitalize the first letter
 		

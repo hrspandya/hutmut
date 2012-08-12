@@ -30,6 +30,11 @@
 
   <body>
 
+      <?PHP
+        $this->load->library('session');
+        var_dump($this->session->all_userdata());
+      
+      ?>
 <!--
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">

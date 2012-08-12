@@ -15,13 +15,13 @@
 |
 */
 
-//$_SERVER['APPLICATION_ROOT'] = $_SERVER['DOCUMENT_ROOT'].'/../CodeIgniter_2.1.2/application';
-//$config['base_url']	= 'http://www.hutmut.com/';
+$_SERVER['APPLICATION_ROOT'] = $_SERVER['DOCUMENT_ROOT'].'/CodeIgniter_2.1.2/application';
+$config['base_url']	= 'http://www.hutmut.com/';
 
 
 //For working in Local MAMP/htdocs/ comment this and uncomment above when working in production or QA
-$_SERVER['APPLICATION_ROOT'] = "/Applications/MAMP/htdocs/hutmut_branch3/CodeIgniter_2.1.2/application";
-$config['base_url']	= 'http://localhost/hutmut_branch3/';
+//$_SERVER['APPLICATION_ROOT'] = "/Applications/MAMP/htdocs/hutmut_branch_3/CodeIgniter_2.1.2/application";
+//$config['base_url']	= 'http://localhost/hutmut_branch_3/';
 
 /*
 |--------------------------------------------------------------------------
@@ -231,7 +231,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'AHKDU#YPW@BCM!KLhdky@#';
 
 /*
 |--------------------------------------------------------------------------
@@ -252,7 +252,7 @@ $config['encryption_key'] = '';
 |
 */
 $config['sess_cookie_name']		= 'ci_session';
-$config['sess_expiration']		= 7200;
+$config['sess_expiration']		= 600; //600 seconds , 10 mins
 $config['sess_expire_on_close']	= FALSE;
 $config['sess_encrypt_cookie']	= FALSE;
 $config['sess_use_database']	= FALSE;
