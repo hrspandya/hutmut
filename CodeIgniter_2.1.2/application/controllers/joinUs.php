@@ -40,8 +40,8 @@ class JoinUs extends CI_Controller {
 		$this->form_validation->set_rules('first_name', 'First Name', 'trim|required|min_length[2]|max_length[50]|xss_clean');
 		$this->form_validation->set_rules('last_name', 'Last Name ', 'trim|required|min_length[2]|max_length[50]|xss_clean');
 		$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email|xss_clean|is_unique[agent.email]');
-		$this->form_validation->set_rules('password', 'Password', 'trim|required|matches[confirm_password]|min_length[2]|max_length[50]|xss_clean');
-                $this->form_validation->set_rules('confirm_password', 'Confirm Password', 'trim|required|min_length[2]|max_length[50]|xss_clean');
+		$this->form_validation->set_rules('password', 'Password', 'trim|required|matches[confirm_password]|min_length[6]|max_length[50]|xss_clean');
+                $this->form_validation->set_rules('confirm_password', 'Confirm Password', 'trim|required|min_length[6]|max_length[50]|xss_clean');
                 
                 
                 //DEFINING MESSAGE FOR EACH VALIDATION RULE

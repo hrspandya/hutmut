@@ -1,2 +1,3 @@
 body {padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */ }
 .center{text-align:center;}
+.err{color:red; display: inline; margin-left: 20px;}

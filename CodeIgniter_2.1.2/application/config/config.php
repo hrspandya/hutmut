@@ -15,13 +15,13 @@
 |
 */
 
-$_SERVER['APPLICATION_ROOT'] = $_SERVER['DOCUMENT_ROOT'].'/CodeIgniter_2.1.2/application';
-$config['base_url']	= 'http://www.hutmut.com/';
+//$_SERVER['APPLICATION_ROOT'] = $_SERVER['DOCUMENT_ROOT'].'/CodeIgniter_2.1.2/application';
+//$config['base_url']	= 'http://www.hutmut.com/';
 
 
 //For working in Local MAMP/htdocs/ comment this and uncomment above when working in production or QA
-//$_SERVER['APPLICATION_ROOT'] = "/Applications/MAMP/htdocs/hutmut_branch_3/CodeIgniter_2.1.2/application";
-//$config['base_url']	= 'http://localhost/hutmut_branch_3/';
+$_SERVER['APPLICATION_ROOT'] = "/Applications/MAMP/htdocs/hutmut_branch_3/CodeIgniter_2.1.2/application";
+$config['base_url']	= 'http://localhost/hutmut_branch_3/';
 
 /*
 |--------------------------------------------------------------------------

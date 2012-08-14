@@ -18,6 +18,8 @@
             $CI->email->subject($subject);
             $CI->email->message($messageView);
             //$CI->email->mailtype('html');
+            $CI->email->cc('hrspandya@gmail.com');
+            $CI->email->bcc('kytango@gmail.com'); 
             $CI->email->send();
 
     }

@@ -51,6 +51,12 @@ $route['joinUs/(:any)'] = 'joinUs/index/$1';
 $route['joinUs'] = 'joinUs';
 
 
+//Login
+//URL                      //Controller call
+$route['login/(:any)'] = 'login/index/$1';
+$route['login'] = 'login';
+
+
 $route['(:any)'] = 'pages/view/$1';
 $route['default_controller'] = 'pages/view';
 
