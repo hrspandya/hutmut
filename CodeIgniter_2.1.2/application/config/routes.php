@@ -57,6 +57,18 @@ $route['login/(:any)'] = 'login/index/$1';
 $route['login'] = 'login';
 
 
+//forgotYourPassword
+//URL                       //Controller call
+$route['forgotYourPassword/(:any)'] = 'forgotYourPassword/index/$1';
+$route['forgotYourPassword'] = 'forgotYourPassword';
+
+
+//resetYourPassword
+//URL                       //Controller call
+$route['resetYourPassword/(:any)'] = 'resetYourPassword/index/$1';
+$route['resetYourPassword'] = 'resetYourPassword';
+
+
 $route['(:any)'] = 'pages/view/$1';
 $route['default_controller'] = 'pages/view';
 

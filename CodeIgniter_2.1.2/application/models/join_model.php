@@ -1,5 +1,5 @@
 <?php
-class Join_model extends CI_Model {
+class join_model extends CI_Model {
 
 	public function __construct()
 	{

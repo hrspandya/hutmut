@@ -180,7 +180,7 @@ houses.</li>
             
 <!--<div class="signin-btn"></div> -->
 <div>
-<p><a href="#" class="bluecolorsmall">Forgot your HutMut password?</a></p>
+<p><a href="<?=$base_url; ?>index.php/forgotYourPassword/" class="bluecolorsmall">Forgot your HutMut password?</a></p>
 <p><span style="color:#838383;">By signing in, you agree to HutMut’s </span><a href="#" class="greycolorlinks">Statement of Integrity</a>, <a href="#" class="greycolorlinks">Terms and Conditions</a> and <a href="#" class="greycolorlinks">Privacy Policy</a>.</p>
 </div>
       </div><!-- leftbody -->

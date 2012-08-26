@@ -15,12 +15,15 @@ class JoinUs extends CI_Controller {
                 $this->load->helper(array('form', 'url'));
                 $this->load->library('session');
                 
+                                
+                $data['title'] = 'Join Hutmut';
+                
                 //FETCH POST DATA
                 $postData = $this->input->post(NULL, TRUE);
                 
                 $this->load->helper('email');
 
-                sendEmail("hrspandya@gmail.com", "hrspandya@gmail.com", "Hutmut", "Welcome to Hutmut", "");
+                sendEmail("doNotReply_welcome@hutmut.com", "hrspandya@gmail.com", "Hutmut", "Welcome to Hutmut",$this->load->view('pages/about', $data, true));
            
                 
                 //CHECKING FOR SESSION VALIDATION
@@ -29,8 +32,7 @@ class JoinUs extends CI_Controller {
 //                   return;
 //                }
                 
-                                
-                $data['title'] = 'Join Hutmut';
+                
                 
                 
                 //Form Validation START
@@ -78,9 +80,7 @@ class JoinUs extends CI_Controller {
 
                     
                     //SENDING EMAIL 
-                    sendEmail("hrspandya@gmail.com", "hrspandya@gmail.com", "Hutmut", "Welcome to Hutmut", $this->load->view('pages/about', $data));
-                    
-                    
+                    sendEmail("doNotReply_welcome@hutmut.com", "hrspandya@gmail.com", "Hutmut", "Welcome to Hutmut",$this->load->view('pages/about', $data, true));
                     
                     
                     redirect('', 'refresh'); //this will go to the root page, home, for now

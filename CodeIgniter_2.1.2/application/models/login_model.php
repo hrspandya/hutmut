@@ -47,4 +47,22 @@ class login_model extends CI_Model {
             
 	}
         
+        
+        //---------------------------------
+        // EMAIL EXISTS (true or false)
+        //---------------------------------
+        private function email_exists($email)
+        {
+          $this->db->where('email', $email);
+          $query = $this->db->get('agent');
+          
+          if( $query->num_rows() > 0 ){
+              return TRUE; 
+              
+          } else {
+              return FALSE; 
+          }
+          
+        }
+        
 }
