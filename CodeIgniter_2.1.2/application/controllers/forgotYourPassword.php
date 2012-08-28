@@ -7,7 +7,7 @@ class forgotYourPassword extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		$this->load->model('forgotYourPassword_model');
+		$this->load->model('forgotyourpassword_model');
 	}
 
 	public function index()
@@ -60,7 +60,7 @@ class forgotYourPassword extends CI_Controller {
                 }else{
                     
                     //IF EVERYTHING SUCCESSFUL, SAVE DATA, CREATE SESSION
-                    $resetId = $this->forgotYourPassword_model->get_secureResetId($this->db->escape($postData['email']));
+                    $resetId = $this->forgotyourpassword_model->get_secureResetId($this->db->escape($postData['email']));
                     
                     if($resetId != null){
                         $data['isResetEmailSent'] = true;

@@ -69,6 +69,12 @@ $route['resetYourPassword/(:any)'] = 'resetYourPassword/index/$1';
 $route['resetYourPassword'] = 'resetYourPassword';
 
 
+//Agent Background and experience
+//URL                       //Controller call
+$route['agentBackground/(:any)'] = 'agentBackground/index/$1';
+$route['agentBackground'] = 'agentBackground';
+
+
 $route['(:any)'] = 'pages/view/$1';
 $route['default_controller'] = 'pages/view';
 

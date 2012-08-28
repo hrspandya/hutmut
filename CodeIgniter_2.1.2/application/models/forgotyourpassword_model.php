@@ -1,5 +1,5 @@
 <?php
-class forgotYourPassword_model extends CI_Model {
+class forgotyourpassword_model extends CI_Model {
 
 	public function __construct()
 	{
